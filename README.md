@@ -1,7 +1,8 @@
-eeg-classification
+EEG-Classification
 ==============================
 
 This project focuses on the classification of gait patterns using raw EEG signals recorded from patients who underwent various gait trials. The gait trials were meticulously captured using the VICON System to extract precise gait patterns, while simultaneous recordings of brainwaves were obtained through EEG. The overarching goal is to develop a machine learning model capable of predicting gait patterns based on EEG time series data.
+Both multiclass and single class segmentation is implemented
 
 ## Introduction:
 Gait analysis is a critical component of assessing motor function and neurological disorders. Traditional methods involve the use of motion capture systems like VICON to precisely capture and analyze gait patterns. In this project, we extend these conventional approaches by incorporating EEG recordings to investigate the relationship between brain activity and gait .The precise synchronization of EEG and gait event data provides a rich dataset for training and validating machine learning models. This integrated approach contributes to a comprehensive understanding of the neural underpinnings of gait, potentially leading to advancements in personalized rehabilitation strategies, early detection of neurological disorders, and the development of neuroprosthetics. The findings from this study have broader implications for both clinical and research applications in the fields of neuroscience, biomechanics, and rehabilitation.
@@ -18,7 +19,12 @@ Synchronization: Temporal synchronization between gait data and EEG recordings w
 
 
 
-## Model Selection: Implemented machine learning models, such as deep neural networks, recurrent neural networks (RNNs), or long short-term memory networks (LSTMs), capable of learning temporal dependencies in EEG data.
+## Models: 
+Implemented machine learning models, Transformers, Convolutional Neural Networks and long short-term memory networks (LSTMs), capable of learning temporal dependencies in EEG data.
+The best performing model was the LSTM
+
+## Future Analyis:
+Instead of the time space it would be nice to explore the frequency domain to extract features to see which one correlate with what Gaitpattern as the Models were quite good for binary classifications but had drawbacks in multiclass classification.
 
 
 
