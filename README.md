@@ -4,6 +4,11 @@ EEG-Classification
 This project focuses on the classification of gait patterns using raw EEG signals recorded from patients who underwent various gait trials. The gait trials were meticulously captured using the VICON System to extract precise gait patterns, while simultaneous recordings of brainwaves were obtained through EEG. The overarching goal is to develop a machine learning model capable of predicting gait patterns based on EEG time series data.
 Both multiclass and single class segmentation is implemented
 
+To run the Model, also individual arguments are able to beeing passed.
+```
+src/models/train_model.py
+```
+
 ## Introduction:
 Gait analysis is a critical component of assessing motor function and neurological disorders. Traditional methods involve the use of motion capture systems like VICON to precisely capture and analyze gait patterns. In this project, we extend these conventional approaches by incorporating EEG recordings to investigate the relationship between brain activity and gait .The precise synchronization of EEG and gait event data provides a rich dataset for training and validating machine learning models. This integrated approach contributes to a comprehensive understanding of the neural underpinnings of gait, potentially leading to advancements in personalized rehabilitation strategies, early detection of neurological disorders, and the development of neuroprosthetics. The findings from this study have broader implications for both clinical and research applications in the fields of neuroscience, biomechanics, and rehabilitation.
 
@@ -35,8 +40,6 @@ Project Organization
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
